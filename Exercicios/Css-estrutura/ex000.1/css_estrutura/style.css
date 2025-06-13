@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.externo{
+
+    
+    background-color: rgb(255, 0, 0);
+    h2{
+        color: rgb(0, 255, 255);
+    }
+    p {
+        color: blue;
+    }
+}
+

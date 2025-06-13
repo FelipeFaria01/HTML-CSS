@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas/Midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em outros dispositivos diferentes</p>
+      <picture>
+        <source media="(max-width:750px)" srcset="imgaula/imagem-p.png" type="image/png">
+
+        <source media="(max-width:1050px )" srcset="imgaula/imagem-m.png" type="image/png">
+
+        <img src="imgaula/imagem-g.png" alt="Imagem flexivel.">
+        
+    </picture>
+<!-----------------------------------------------------------------------------
+     <picture>
+        <source media="(min-width:1050px)" srcset="imgaula/imagem-g.png" type="image/png">
+        <source media="(min-width:750px)" srcset="imgaula/imagem-m.png" type="image/png">
+        <img src="imgaula/imagem-p.png" alt="flexivel">
+    </picture>-->
+
+    <h1>Colocando audio no site</h1>
+    <p>Escute podcastes aqui.</p>
+    <!--<audio src="Midia/seu bode a minha vó está em perigo #meme #memes #humorizandojogos.mp3" controls autoplay></audio>  MANEIRA LIMITADA --> 
+
+    <audio preload="metadata" autoplay controls>
+        <source src="Midia/videoplayback.m4a" type="audio/mpeg">
+        <source src="Midia/videoplayback.ogg" type="audio/ogg">
+        <source src="Midia/videoplayback.wav" type="audio/wav">    
+    </audio>
+    <p>Caso seu navegador não consiga reproduzir o audio. <a href="Midia/videoplayback.m4a" target="_blank" rel="external">Baixe-o aqui</a></p>
+
+
+    <h1>HOSPEDANDO VÍDEOS NO SITE</h1>
+    <p>Esse vídeo esta locado no meu proprio servidor</p>
+
+    <p>vídeo em mp4</p>
+    <video src="Midia/Flores.mp4" width="500"controls></video>
+
+    <p>Vídeo em WBEM </p>
+    <video src="Midia/Flores(1).webm" width="500" controls></video> 
+
+    <!--Outra maneira e hospedar seu vídeo-->
+    <p>Outra formatação</p>
+
+    <video controls width="500" poster="imgaula/imagem-p.png" autoplay loop>
+        <source src="Midia/Flores.mp4" type="video/mp4">
+        <source src="Midia/Flores(1).webm" type="video/webm">   
+    </video>
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.<a href="Midia/Flores.mp4" target="_blank" rel="external">Baixe-o</a></p>´
+
+    <h1>Video externo</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=BKUqMrNl7RYc_gBu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--A RECOMENDAÇÃO É QUE O CLIENTE USE OS DADOS DE REDES NETWORKINGS, POIS CASO O CLIENTE USE OS PRÓPRIOS DADOS, O SITE CONSUMIRA MAIS BANDA LARGA. -->
+
+    <!--Sites para fazer esse bagulho ai.Youtube, Viemo...-->
+    
+
+
+</body>
+</html>
